@@ -1,47 +1,50 @@
-print ("Какаого цвета карта? Черная/Красная")
-color=input()
-if color== "Красная":
-    print ("Нарисованы ли на ней сердца? Да/Нет")
-    hearts=input()
+# This program is guessing the card, which was chosen by a user.
+# It asks certain questions to guess it.
+
+print("Какого цвета карта? Черная/Красная")                       # Program asks if the card black or red.
+color = input()
+if color == "Красная":
+    print("Нарисованы ли на ней сердца? Да/Нет")
+    hearts = input()
     if hearts == "Да":
-        print("Карта больше 10? Да/Нет")
-        quantity= input()
-        if quantity== "Да":
-            print ("На карте изображена девушка? Да/Нет")
-            woman=input()
-            if woman== "Да":
-                print ("Дама черви")
+        print("Карта больше 10? Да/Нет")                           # Program asks if the card bigger than 10.
+        quantity = input()
+        if quantity == "Да":
+            print("На карте изображена девушка? Да/Нет")           # Program asks if there's a woman on a card.
+            woman = input()
+            if woman == "Да":
+                print("Дама черви")
             else:
-                print ("Карта самая старшая в колоде? Да/Нет")
-                oldest= input()
-                if oldest== "Да":
-                    print ("Туз черви")
+                print("Карта самая старшая в колоде? Да/Нет")      # Program asks if the card the oldest.
+                oldest = input()
+                if oldest == "Да":
+                    print("Туз черви")
                 else:
-                    print ("Карта следует сразу за 10? Да/Нет")
-                    knave= input()
+                    print("Карта следует сразу за 10? Да/Нет")
+                    knave = input()
                     if knave == "Да":
                         print("Валет черви")
                     else:
                         print("Король черви")
         else:
-            print ("Карта чётная? Да/Нет")
-            parity=input()
+            print("Карта чётная? Да/Нет")
+            parity = input()
             if parity == "Да":
-                print ("На какое число делится карта? 3/4/5")
-                division1=input()
-                if division1== "3":
-                    print ("Шестерка черви")
-                if division1== "4":
-                    print ("Восьмерка черви")
+                print("На какое число делится карта? 3/4/5")
+                division1 = input()
+                if division1 == "3":
+                    print("Шестерка черви")
+                if division1 == "4":
+                    print("Восьмерка черви")
                 if division1 == "5":
-                    print ("Десятка черви")
+                    print("Десятка черви")
             else:
-                print ("Карта больше 8? Да/Нет")
-                between=input()
+                print("Карта больше 8? Да/Нет")
+                between = input()
                 if between == "Да":
-                    print ("Девятка черви")
+                    print("Девятка черви")
                 else:
-                    print ("Семерка черви")
+                    print("Семерка черви")
 
 
 
